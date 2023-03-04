@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
-import ck.test.designpatterns.controller.Controller;
+import ck.test.designpatterns.model.Database;
 import ck.test.designpatterns.model.Model;
 
 public class View extends JFrame implements ActionListener {
@@ -23,6 +23,9 @@ public class View extends JFrame implements ActionListener {
 	private JTextField nameField;
 	private JPasswordField passField;
 	private LoginListener loginListener;
+	
+	//Database db = new Database();       // can be used in any Class and creates new Database-Objects
+	Database db = Database.getInstance(); // Singleton pattern, always gives you the same and only Database-Object
 
 	public View(Model model) throws HeadlessException {
 		super("MVC Demo");

@@ -13,7 +13,6 @@ public class Application {
 		SwingUtilities.invokeLater(() -> {
 			runApp();
 		});
-
 	}
 	
 	public static void runApp() {
@@ -24,8 +23,5 @@ public class Application {
 		Controller controller = new Controller(view, model);
 		
 		view.setLoginListener(controller);
-		
-		
 	}
-
 }
