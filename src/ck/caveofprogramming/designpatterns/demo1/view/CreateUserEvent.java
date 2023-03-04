@@ -1,25 +1,12 @@
-package ck.test.designpatterns.model;
+package ck.caveofprogramming.designpatterns.demo1.view;
 
-public class Person {
-	
-	private int id;
+public class CreateUserEvent {
 	private String name;
 	private String password;
-	
-	public Person() {
-	}
-	
-	public Person(String name, String password) {
+
+	public CreateUserEvent(String name, String password) {
 		this.name = name;
 		this.password = password;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getName() {

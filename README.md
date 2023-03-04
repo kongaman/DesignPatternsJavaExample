@@ -29,6 +29,7 @@ Software Design Patterns in Java (Swing) - https://caveofprogramming.teachable.c
 - No-Argument constructor, getters and setter ( in standard format get + capital letter, set + capital letter, is + capital letter for booleans)
 - Very lightweight
 
-**DAO - Database Access Object Pattern** (PersonDAO)
+**DAO - Database Access Object Pattern** (PersonDAO) ( *package ck.caveofprogramming* )
  - One class that deals with the database
- - usually one class per table/view
+ - usually one class per table or view
+ - abstracts dealing with the database away from the other classes (db might change, methods called from other classes in DAO stay the same)
