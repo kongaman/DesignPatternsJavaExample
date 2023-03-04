@@ -8,13 +8,14 @@ Software Design Patterns in Java (Swing) - https://caveofprogramming.teachable.c
 - the back end **NEVER** imports front end stuff
 
 **Model-View-Controller** (Model, View, Controller)
-- The model represents/deals directly with the data
+- The model represents/deals directly with the data.
+- "The model" should be thought of as the model package not as a single class in which is packaged everything thats data-related (check model packages in the project).
 - The view interacts with the user (it's a view of the data-model) GUI
 - The controller contains the logic of the application ("business logic" - neither data nor GUI)
 
 **Observer Pattern** (LoginListener + LoginFormEvent)
 - The observer is the listener that waits for something to trigger it
-- The subject (view) that is observed (by the controller) best doesn't even have to know that there is an obsever
+- The subject (view) that is observed (by the controller) best doesn't even have to know that there is an observer
 - When something triggers a piece of code will run in the observing class.
 - Usually an EventListener is used to listen to the subject and the Event to is used to pass data if needed.
 
@@ -33,3 +34,5 @@ Software Design Patterns in Java (Swing) - https://caveofprogramming.teachable.c
  - One class that deals with the database
  - usually one class per table or view
  - abstracts dealing with the database away from the other classes (db might change, methods called from other classes in DAO stay the same)
+ - **DAO Factory Pattern**
+ - creates the DAO objects. Is used to implement another abstraction layer
