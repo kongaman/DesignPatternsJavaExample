@@ -11,3 +11,9 @@ Model-View-Controller
 - The model represents/deals directly with the data
 - The view interacts with the user (it's a view of the data-model) GUI
 - The controller contains the logic of the application ("business logic" - neither data nor GUI)
+
+Observer Pattern
+- The observer is the listener that waits for something to trigger it
+- The subject (view) that is observerd (by the controller) best doesn't even have to know that there is an obsever
+- When something triggers a piece of code will run in the observing class.
+- Usually an EventListener is used to listen to the subject and the Event to is used to pass data if needed.

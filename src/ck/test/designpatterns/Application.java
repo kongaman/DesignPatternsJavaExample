@@ -23,6 +23,8 @@ public class Application {
 		
 		Controller controller = new Controller(view, model);
 		
+		view.setLoginListener(controller);
+		
 		
 	}
 
